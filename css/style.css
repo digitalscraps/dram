@@ -10,18 +10,11 @@ body {
 }
 
 h1 {
-  font-size: 5.625rem; /* 90px/16px  */
-  color: #000;
-  text-transform: uppercase;
-  font-weight: normal;
-  line-height: 1.3;
-  text-shadow: 5px 1px 1px rgba(0,0,0,.3);
+1rem;
 }
 
 h2 {
-  font-size: 3.3125em; /* 53px/16px  */
-  font-weight: normal;
-  line-height: 1.1;
+1rem;
 }
 
 h3 {
@@ -31,7 +24,6 @@ h3 {
 }
 img {
   max-width: 100%;
-  margin: 0 30px;
 }
 ul, ol {
   list-style: none;
@@ -47,7 +39,6 @@ li {
 a:link {
   color: #f79704;
   text-decoration: none;
-
 }
 
 a:visited {
@@ -62,44 +53,38 @@ a:active {
   color: lightcoral;
 }
 
-/* Main Styles --------------------- */
-
+/* Home Page Header --------------------- */
 .main-header {
-
-  height: 850px;
+  max-width: 100%;
+  height: 400px;
   padding-top: 170px;
-
   background: linear-gradient(#ffa949, transparent 90%),
     linear-gradient(0deg, #fff, transparent),
     #ffa949 url("../img/dram_bg.png") no-repeat center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
+  font-size: 2rem; /* 90px/16px  */
   color: #000;
-  font-size: 1.2rem; /* 26px/16px */
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3;
 }
 
+.star {
+  width: 50px;
+}
+/* Home Page Body --------------------- */
+
+/* Intro --------------------- */
 .intro {
   font-size: 1.25em; /* 20px/16px */
   line-height: 1.6;
-}
-
-.primary-content,
-.main-header,
-.main-footer {
   text-align: center;
-}
-
-.primary-content {
-  padding-top: 25px;
-  padding-bottom: 95px;
-}
-.secondary-content {
-  padding-top: 80px;
-  padding-bottom: 70px;
-  border-bottom: 2px solid #dfe2e6;
-
 }
 
 .callout {
@@ -109,26 +94,11 @@ a:active {
   margin-top: 20px;
   display: inline-block;
 }
-.main-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-bottom: 10px solid #b90e34;
-}
 
 .t-border {
   border-top: 2px solid lightgrey;
 }
 
-/* Layout Styles ------------------ */
-
-.primary-content,
-.secondary-content {
-  width: 75%;
-  max-width: 960px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
-}
 .ds__section_1 {
   color: white;
   background: #434a52;
@@ -138,61 +108,56 @@ a:active {
   box-shadow: 0 15px 20px -12px rgba(0,0,0,.5);
   /* inset box shadow box-shadow: inset 0 0 50px 10px rgba(0,0,0,1); */
   border-radius: 10px;
+  text-align: center;
 }
-.star {
-  width: 50px;
+/* Layout Styles ------------------ */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
 }
-/* Floated Columns ------------------ */
-.ds__section_2, .ds__section_3 {
-  width: 46.5%;
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
-.ds__section_2 {
-  float: right;
-}
-.ds__section_3 {
-  float: left;
-}
-/* Float Clearfix ------------------ */
 
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid #b90e34;
+  text-align: center;
 }
+
+
 
 /* Media Queries ------------------ */
 
-@media (max-width: 1020px) {
-  .primary-content,.secondary-content {
-    width: 90%;
-  }
-  .ds__section_1 {
-    padding: 10% 12%;
-    margin: 50px 0 20px;
-  }
-}
+@media (min-width: 768px) {
 
-@media (max-width: 768px) {
-  .primary-content,.secondary-content {
-    width: 100%;
-    padding: 20px;
-    border-top: none;
-  }
+
   .main-header {
     max-height: 380px;
     padding: 50px 25px 0;
+    display: flex;
   }
   .title {
-    font-size: 1.3rem;
+    font-size: 4rem;
     border: none;
   }
-  .h1 {
+  h1 {
     font-size: 5rem;
     line-height: 1.1;
   }
-  .star {
-    display: none;
+  h2 {
+    font-size: 3.3125em; /* 53px/16px  */
+    font-weight: normal;
+    line-height: 1.1;
   }
+
   .intro {
     font-size: 1rem;
   }
@@ -203,5 +168,14 @@ a:active {
   .main-footer {
     padding: 20px;
   }
+}
 
+@media (max-width: 1020px) {
+  .primary-content,.secondary-content {
+    width: 90%;
+  }
+  .ds__section_1 {
+    padding: 10% 12%;
+    margin: 50px 0 20px;
+  }
 }
