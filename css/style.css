@@ -20,7 +20,6 @@ h2 {
 h3 {
   font-size: 1.25em; /* 20px/16px  */
   color: #48525c;
-  line-height: 1.2;
 }
 img {
   max-width: 100%;
@@ -81,6 +80,13 @@ a:active {
 /* Home Page Body --------------------- */
 
 /* Intro --------------------- */
+.container_intro,.container_primary {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 .intro {
   font-size: 1.25em; /* 20px/16px */
   line-height: 1.6;
@@ -91,38 +97,44 @@ a:active {
   font-size: 1.25em;
   border-bottom: solid #000 3px;
   padding: 0 9px 3px;
-  margin-top: 20px;
-  display: inline-block;
 }
 
 .t-border {
   border-top: 2px solid lightgrey;
 }
 
-.ds__section_1 {
+.section_1 {
   color: white;
   background: #434a52;
   padding: 8% 15%;
   border-top: solid #b90e34 10px;
-  margin: 105px 0 60px;
+  margin: 40px 0 30px;
   box-shadow: 0 15px 20px -12px rgba(0,0,0,.5);
   /* inset box shadow box-shadow: inset 0 0 50px 10px rgba(0,0,0,1); */
   border-radius: 10px;
   text-align: center;
 }
+
+/* Primary --------------------- */
+aside {
+  padding: 0 1em;
+}
+.primary_content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 /* Layout Styles ------------------ */
 .container {
   max-width: 90%;
   margin: 0 auto;
   display: flex;
-  flex-flow: wrap;
-  align-items: center;
 }
 .row {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
 }
 
 .main-footer {
@@ -137,12 +149,9 @@ a:active {
 /* Media Queries ------------------ */
 
 @media (min-width: 768px) {
-
-
   .main-header {
     max-height: 380px;
     padding: 50px 25px 0;
-    display: flex;
   }
   .title {
     font-size: 4rem;
@@ -157,25 +166,20 @@ a:active {
     font-weight: normal;
     line-height: 1.1;
   }
-
   .intro {
     font-size: 1rem;
   }
-  .ds__section_2, .ds__section_3 {
-    float: none;
-    width: 100%;
-  }
-  .main-footer {
-    padding: 20px;
-  }
 }
 
-@media (max-width: 1020px) {
-  .primary-content,.secondary-content {
-    width: 90%;
+@media (min-width: 1020px) {
+  .container_primary {
+    flex-flow: row;
   }
   .ds__section_1 {
     padding: 10% 12%;
-    margin: 50px 0 20px;
+    margin: 20px 0 20px 0;
+  }
+  aside {
+    flex: 1;
   }
 }
