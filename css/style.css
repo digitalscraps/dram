@@ -1,44 +1,18 @@
-/* Base Styles -------------------- */
-
-* {
-  box-sizing: border-box;
-}
-body {
-  color: #878787;
-  margin: 0;
-  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+/* Navigation and Header ------------------ */
+.s-nb-links a {
+  color: #000;
+  font-family: 'Nova Square', cursive;
+  font-size: 1rem;
+  line-height: 25.2px;
+  letter-spacing: 0.28px;
 }
 
-h1 {
-1rem;
-}
 
-h2 {
-1rem;
-}
-
-h3 {
-  font-size: 1.25em; /* 20px/16px  */
-  color: #48525c;
-}
-img {
-  max-width: 100%;
-}
-ul, ol {
-  list-style: none;
-  margin-left: 0;
-}
-li {
-  margin-bottom: .5em;
-}
 
 
 /* Pseudo-classes ------------------ */
 
-a:link {
-  color: #f79704;
-  text-decoration: none;
-}
+
 
 a:visited {
   color: lightblue;

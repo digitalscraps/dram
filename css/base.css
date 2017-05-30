@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    line-height: 1.6;
+    color: #000;
+    background: #fff;
+    font-family: 'Nova Square', cursive;
+    margin: 0;
+  }
+
+  /*Global Font Displays */
+  h1 {
+    font-size: 7rem;
+    line-height: 152.32px;
+    letter-spacing: 28px;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    font-size: 3.4375rem;
+    line-height: 55px;
+    letter-spacing: normal;
+    color: #fff;
+  }
+  h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125rem;
+    line-height: 18px;
+    color: #fff;
+  }
+  h4 {
+
+    font-size: 2em;
+  }
+  h5 {
+
+    font-size: 1em;
+  }
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 	1.25rem;
+    line-height: 1.25;
+    text-align: start;
+    letter-spacing: normal;
+    color: #000;
+  }
+
+  /* Links and Images */
+a {
+	text-decoration: none;
+    color: #000;
+}
+a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+i {
+  color: #2a64f8;
+}
+img {
+  max-width: 100%;
+  margin: 1em 0;
+}
+
+  /* Layout Elements */
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    margin-bottom: 1.5rem;
+  }
+
+  section {
+  margin-bottom: 1.25rem;
+  }
+  footer {
+
+  }
+  footer a {
+    padding: 1rem;
+  }
